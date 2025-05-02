@@ -10,5 +10,8 @@
   },
   "02_interactive_coding_with_jupyter_notebooks/wellcome_jupyter.ipynb": {
     "wellcome_jupyter.html": "3e7ab1c8"
+  },
+  "03_version_control_with_git/03_version_control_with_git.qmd": {
+    "03_version_control_with_git.md": "5cf44150"
   }
 }
