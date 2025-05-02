@@ -41,15 +41,15 @@ Git helps track changes in your project by monitoring file modifications. You ca
 
 The temporary staging area holds changes before they are committed (saved permanently in the repository’s history). You can stage modified files, newly created files, and deleted files.
 
-| Command                | Description                                             | VS Code GUI |
-|------------------------|---------------------------------------------------------|-------------|
-| `git init`            | Initialize a new Git repository in the current directory | Click **Source Control (Ctrl + Shift + G)** → Click **"Initialize Repository"** |
-| `git status`          | Show the status of changes in the working directory      | Click **Source Control (Ctrl + Shift + G)** → See the file changes |
-| `git add file1.txt`   | Stage `file1.txt` for commit                             | Click **➕ (plus) icon** next to the file in **Source Control** |
-| `git add .`          | Stage all modified and new files                         | Click **➕ (plus) icon** next to each file OR Click **"Stage All Changes"** |
-| `git reset file1.txt` | Unstage `file1.txt`                                      | Click **➖ (minus) icon** next to the file to move it back to "Changes" |
+| Command | Description | VS Code GUI |
+|---|---|---|
+| `git init` | Initialize a new Git repository in the current directory | Click **Source Control (Ctrl + Shift + G)** → Click **"Initialize Repository"** |
+| `git status` | Show the status of changes in the working directory | Click **Source Control (Ctrl + Shift + G)** → See the file changes |
+| `git add file1.txt` | Stage `file1.txt` for commit | Click **➕ (plus) icon** next to the file in **Source Control** |
+| `git add .` | Stage all modified and new files | Click **➕ (plus) icon** next to each file OR Click **"Stage All Changes"** |
+| `git reset file1.txt` | Unstage `file1.txt` | Click **➖ (minus) icon** next to the file to move it back to "Changes" |
 
-**Exercises**  
+---
 
 :::{#exr-}
 Create a new folder for your Git repository and open this folder in a new VSCode Window.
@@ -97,6 +97,8 @@ In Git, each commit has a unique **commit hash**, which is a long ID that helps 
 | `git diff` | Compare the working directory with the last commit | Click on the file in **Source Control** and check the inline diff |
 | `git diff <commit-hash1> <commit-hash2>` | Compare two specific commits | **N/A** (Command-line only) |
 
+---
+
 :::{#exr-}
 Commit the staged files `experiment_1.txt` and `experiment_2.txt` with a message "create files".
 :::
@@ -143,6 +145,8 @@ Git allows you to go back to a previous version of your work if needed. There ar
 | `git log --oneline`          | Shows commit history in a short format             | NA |
 | `git revert <commit-hash>`   | Creates a new commit that undoes only the specified commit | NA |
 
+---
+
 :::{#exr-}
 Modify `experiment_1.txt` again and commit the changes.  
 :::
@@ -160,7 +164,7 @@ Check the status and commit history to confirm the revert.
 :::
 
 ### Bonus Exercises
-
+ w
 :::{#exr-}
 Modify and commit changes to `experiment.txt` a few times.  
 :::

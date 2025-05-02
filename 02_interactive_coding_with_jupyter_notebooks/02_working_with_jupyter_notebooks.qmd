@@ -49,6 +49,8 @@ Run the entire notebook by clicking "Run All"
 
 Now that we know how to use a notebook, it is time to create our own!
 
+---
+
 :::{#exr-}
 Click on the "New File" button that appears at the top when you hover over the VSCode file explorer and create a file called `my_first_notebook.ipynb` (the ".ipynb" file extension is essential because it tells VSCode that this file is a jupyter notebook). Then, open the file and select the `test_jupyter` kernel.
 :::
@@ -75,6 +77,8 @@ Save your notebook, either by hitting `Ctrl + S` or by clicking "File">"Save" in
 
 
 ## Managing the State of a Notebook
+
+---
 
 :::{#exr-}
 Open the notebook `managing_state.ipynb`, select the `test_jupyter` environmentas your kernel and run all three cells in the notebook.
@@ -106,6 +110,8 @@ The text cells in a Jupyter notebook are formatted using markdown, a simple yet 
 | `This is **bold**` | Make the text between the double asterisks bold |
 | `[Google](google.com)` | Link to a website |
 | `![Figure 1](./figure1.png)` | Embedd an image |
+
+---
 
 :::{#exr-}
 Create a new notebook called `intro_to_markdown.ipynb` and open it.

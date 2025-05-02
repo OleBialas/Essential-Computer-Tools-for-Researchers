@@ -112,7 +112,6 @@ Per default, Miniforge's distribution of conda will install packages from the `c
 
 ---
 
-
 :::{#exr-}
 Create and activate new environment named `py_env`.
 :::

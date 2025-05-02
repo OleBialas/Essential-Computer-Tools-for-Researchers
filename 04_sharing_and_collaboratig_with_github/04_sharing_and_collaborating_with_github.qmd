@@ -25,6 +25,8 @@ Once you have a local repository, you can push it to GitHub to store it online a
 | `git remote add origin <URL>` | Link the local repository to a remote GitHub repository | Click **Source Control (Ctrl + Shift + G)** → Click **Publish Repository** |
 | `git push -u origin main` | Push local commits to the remote repository and set upstream | Click **Source Control** → Click **...** → Click **Push** |
 
+---
+
 :::{#exr-}
 Open a local git repository (you can use the one from the previous notebook) in a new VSCode window.
 :::
@@ -77,6 +79,8 @@ If a repository already exists on GitHub, you can clone it to your local machine
 |---|---|---|
 | `git clone <repo-url>` | Clone a GitHub repository to a local machine  | Click **Source Control (Ctrl + Shift + G)** → Click **Clone Repository** |
 | `git pull origin main` | Pull the latest changes from GitHub | Click **Source Control** → Click **...** → Click **Pull** |
+
+---
 
 :::{#exr-}
 Open a folder that is **not a Git repository** in a new VSCode window.
@@ -132,6 +136,8 @@ Forking allows you to create a personal copy of someone else's repository. This 
 | `git clone <your-fork-url>` | Clone your forked repository locally | Click **Source Control (Ctrl + Shift + G)** → Click **Clone Repository** |
 | `git remote add upstream <original-repo-url>` | Link the original repository as an upstream remote | NA |
 | `git push origin main` | Push the merged changes to your forked repository on GitHub | Click **Source Control** → Click **...** → Click **Push** |
+
+---
 
 :::{#exr-}
 Go to GitHub and fork the repository containing the materials for this workshop: https://github.com/ibehave-ibots/iBOTS-Essential-Computer-Tools-for-Researchers-Workshop and copy the URL of your fork.

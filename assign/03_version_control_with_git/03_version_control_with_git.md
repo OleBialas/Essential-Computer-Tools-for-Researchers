@@ -101,8 +101,8 @@ back to “Changes”</td>
 
 **Exercises**
 
-<span class="theorem-title">**Exercise 1**</span> Creat a new folder for
-your Git repository
+<span class="theorem-title">**Exercise 1**</span> Create a new folder
+for your Git repository and open this folder in a new VSCode Window.
 
 <span class="theorem-title">**Exercise 2**</span> Initialize a Git
 repository in this folder.
