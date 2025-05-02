@@ -1,6 +1,6 @@
 ---
 title: "Managing Environments with Conda"
-format: html
+format: md
 filters:
     - assign
 number-sections: true
