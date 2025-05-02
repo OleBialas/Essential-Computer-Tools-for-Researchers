@@ -52,7 +52,7 @@ The temporary staging area holds changes before they are committed (saved perman
 **Exercises**  
 
 :::{#exr-}
-Creat a new folder for your Git repository
+Create a new folder for your Git repository and open this folder in a new VSCode Window.
 :::
 
 :::{#exr-}
