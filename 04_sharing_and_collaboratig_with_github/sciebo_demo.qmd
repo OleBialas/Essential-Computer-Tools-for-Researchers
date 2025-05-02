@@ -1,0 +1,113 @@
+---
+title: "Data storage and exchange with sciebo"
+format: ipynb
+filters:
+  - assign
+number-sections: true
+number-depth: 2
+---
+
+Git is great at tracking changes in small (text) files, large binary files (e.g. data files) can not be tracked efficiently. A simple solution is to host you data in a separate cloud storage, outside of your Git repository. This allows us to store and share large data files while still using Git to track changes in our code.
+
+## Sciebo
+
+If you are a student in North Rhine-Westphalia (NRW), you have access to [Sciebo](https://hochschulcloud.nrw/), a cloud service provided by the University of Muenster. Using Sciebo has several advantages:
+
+- It's free of charge
+- Just login with you university mail and an account is automatically generated
+- Follows strict data protecion laws
+- Feature rich (e.g. builtin text editor)
+
+## Sharing Data via Sciebo
+
+To share a file, simply upload it to sciebo and creat
+
+## Downloading shared data
+
+
+```{python}
+import requests
+import numpy as np
+import os
+
+# --- Configuration ---
+# Replace with the actual public link to your .npz file
+file_url = "https://uni-bonn.sciebo.de/s/qCHMHRKqfpmL8B4"
+# Choose a local filename to save the downloaded file
+local_filename = "downloaded_data.npz"
+# Optional: Specify a directory to save the file
+# download_dir = "data"
+# local_filepath = os.path.join(download_dir, local_filename)
+# If using a directory, make sure it exists:
+# os.makedirs(download_dir, exist_ok=True)
+local_filepath = local_filename  # Use this line if saving in the current directory
+# ---------------------
+
+print(f"Attempting to download from: {file_url}")
+
+try:
+    # Make the request to download the file, stream=True is important for large files
+    response = requests.get(file_url, stream=True)
+    response.raise_for_status()  # Raise an exception for bad status codes (4xx or 5xx)
+
+    # Get the total file size from headers (optional, for progress)
+    total_size = int(response.headers.get("content-length", 0))
+    block_size = 8192  # 8 Kibibytes
+
+    print(f"Downloading to: {local_filepath}")
+    # Open the local file in binary write mode
+    with open(local_filepath, "wb") as f:
+        downloaded_size = 0
+        for chunk in response.iter_content(chunk_size=block_size):
+            # Filter out keep-alive new chunks
+            # if chunk: # This check is usually not needed for file downloads
+            f.write(chunk)
+            downloaded_size += len(chunk)
+            # Optional: Print progress
+            # progress = (downloaded_size / total_size) * 100 if total_size > 0 else 0
+            # print(f"\rDownloaded {downloaded_size}/{total_size} bytes ({progress:.2f}%)", end="")
+
+    print(f"\nDownload complete. File saved as {local_filepath}")
+
+    # --- Load the downloaded .npz file using NumPy ---
+    print(f"Loading data from {local_filepath}...")
+    data = np.load(local_filepath)
+
+    # --- Now you can work with the data ---
+    print("File loaded successfully.")
+
+    # See what arrays are inside the .npz file
+    print("Arrays contained in the file:", list(data.keys()))
+
+    # Example: Access an array (replace 'arr_0' with an actual key from the printout above)
+    if "arr_0" in data:
+        my_array = data["arr_0"]
+        print("Shape of 'arr_0':", my_array.shape)
+        # print("First few elements:", my_array[:5]) # Print first 5 elements
+    elif len(data.keys()) > 0:
+        # Access the first available array if 'arr_0' isn't present
+        first_key = list(data.keys())[0]
+        my_array = data[first_key]
+        print(f"Accessed array '{first_key}'")
+        print(f"Shape of '{first_key}':", my_array.shape)
+
+    # Remember to close the file handle if you need to keep it open longer
+    # data.close() # Usually not necessary if you access arrays immediately
+
+except requests.exceptions.RequestException as e:
+    print(f"\nError during download: {e}")
+except FileNotFoundError:
+    print(
+        f"\nError: Could not write to file path '{local_filepath}'. Check permissions or path."
+    )
+except Exception as e:
+    print(f"\nAn unexpected error occurred: {e}")
+
+# Optional: Clean up the downloaded file afterwards if you only need the data in memory
+# try:
+#     os.remove(local_filepath)
+#     print(f"Removed temporary file: {local_filepath}")
+# except OSError as e:
+#     print(f"Error removing file {local_filepath}: {e}")
+
+```

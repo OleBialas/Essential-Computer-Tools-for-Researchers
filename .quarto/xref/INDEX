@@ -16,5 +16,8 @@
   },
   "04_sharing_and_collaboratig_with_github/04_sharing_and_collaborating_with_github.qmd": {
     "04_sharing_and_collaborating_with_github.md": "f2c12aba"
+  },
+  "04_sharing_and_collaboratig_with_github/sciebo_demo.qmd": {
+    "sciebo_demo.ipynb": "45d17d68"
   }
 }
