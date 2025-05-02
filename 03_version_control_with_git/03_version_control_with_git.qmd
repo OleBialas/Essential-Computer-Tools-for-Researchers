@@ -164,7 +164,7 @@ Check the status and commit history to confirm the revert.
 :::
 
 ### Bonus Exercises
- w
+
 :::{#exr-}
 Modify and commit changes to `experiment.txt` a few times.  
 :::

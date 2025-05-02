@@ -54,9 +54,9 @@ files, newly created files, and deleted files.
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 60%" />
-<col style="width: 13%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr>
@@ -99,7 +99,7 @@ back to “Changes”</td>
 </tbody>
 </table>
 
-**Exercises**
+------------------------------------------------------------------------
 
 <span class="theorem-title">**Exercise 1**</span> Create a new folder
 for your Git repository and open this folder in a new VSCode Window.
@@ -211,6 +211,8 @@ inline diff</td>
 </tbody>
 </table>
 
+------------------------------------------------------------------------
+
 <span class="theorem-title">**Exercise 8**</span> Commit the staged
 files `experiment_1.txt` and `experiment_2.txt` with a message “create
 files”.
@@ -283,6 +285,8 @@ go back to. In this section, we cover reverting changes using Git using
 </tr>
 </tbody>
 </table>
+
+------------------------------------------------------------------------
 
 <span class="theorem-title">**Exercise 17**</span> Modify
 `experiment_1.txt` again and commit the changes.
