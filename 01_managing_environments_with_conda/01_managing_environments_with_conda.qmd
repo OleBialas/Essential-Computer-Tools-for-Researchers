@@ -293,7 +293,7 @@ pip uninstall slab
 :::
 
 
-## Section 3: Exporting and Importing Environments
+## Exporting and Importing Environments
 
 Often, we would like to reproduce an environment across multiple computers and potentially share it with our collaborators. With Conda, we can `export` an evironment, which creates a file that lists all of the packages that are installed with their exact version. With this file, we can create an exact replication of the environment, even after we deleted it or moved to a different setup.
 
