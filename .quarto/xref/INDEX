@@ -1,5 +1,14 @@
 {
   "01_managing_environments_with_conda/01_managing_environments_with_conda.qmd": {
-    "01_managing_environments_with_conda.html": "9df7d8d3"
+    "01_managing_environments_with_conda.md": "ead168cf"
+  },
+  "02_interactive_coding_with_jupyter_notebooks/02_working_with_jupyter_notebooks.qmd": {
+    "02_working_with_jupyter_notebooks.md": "6c88aa7f"
+  },
+  "02_interactive_coding_with_jupyter_notebooks/managing_state.ipynb": {
+    "managing_state.html": "9337e08a"
+  },
+  "02_interactive_coding_with_jupyter_notebooks/wellcome_jupyter.ipynb": {
+    "wellcome_jupyter.html": "3e7ab1c8"
   }
 }

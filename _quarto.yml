@@ -1,2 +1,7 @@
 profile:
   default: assign
+
+project:
+  render:
+    - "*.qmd"
+    - "!*.ipynb"
