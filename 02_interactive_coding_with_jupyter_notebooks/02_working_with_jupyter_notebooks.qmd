@@ -106,8 +106,8 @@ The text cells in a Jupyter notebook are formatted using markdown, a simple yet 
 | --- | --- |
 | `# Title` | Format the text `Title` as a heading level 1 |
 | `## Subtitle` | Format the text `Subtitle` as a heading level 2 |
-| `- first item`<br> `- second item` | Create an unordered list |
-| `1. first item <br> `2. second item` | Create an ordered list |
+| `- first item` | Item in an unordered list |
+| `1. first item` | Item in an ordered list |
 | `This is *italicised*.` | Italice the text betwee the asterisks |
 | `This is **bold**` | Make the text between the double asterisks bold |
 | `[Google](google.com)` | Link to a website |
