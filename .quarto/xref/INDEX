@@ -22,5 +22,8 @@
   },
   "01_managing_environments_with_conda/presentation.qmd": {
     "presentation.html": "6fabbfe8"
+  },
+  "02_interactive_coding_with_jupyter_notebooks/presentation.qmd": {
+    "presentation.html": "63bd7896"
   }
 }

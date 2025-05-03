@@ -1,0 +1,74 @@
+---
+title: "Interactive Coding with Jupyter Notebooks"
+subtitle: "Essential Computer Tools for Researchers"
+format: revealjs
+theme: dracula
+date: May 5, 2025
+---
+
+# Literate Programming
+
+:::: {.columns}
+
+::: {.column width="60%"}
+:::{.fragment fragment-index=1}
+- Literate programming is the combination of **code** with **explanations** of how it works
+:::
+
+:::{.fragment fragment-index=3}
+- Allows combining scientific **theory** and **application** in the same document
+:::
+:::
+
+::: {.column width="40%"}
+:::{.fragment fragment-index=2}
+![](./images/literate_programming.jpg)
+:::
+:::
+
+::::
+
+# Jupyter Notebooks
+
+:::: {.columns}
+
+::: {.column width="70%"}
+:::{.fragment fragment-index=1}
+- A Jupyter notebook is an **interactive computing** environment
+:::
+
+:::{.fragment fragment-index=2}
+- The name is a combination of the main supported languages - Julia, **Python** and R
+:::
+:::
+
+::: {.column width="30%"}
+:::{.fragment fragment-index=1}
+![](./images/jupyter.png)
+:::
+:::
+
+::::
+
+# Python Kernel
+
+:::: {.columns}
+
+::: {.column width="50%"}
+:::{.fragment}
+- The Jupyter notebook itself is **language agnostic**
+:::
+
+:::{.fragment}
+- To execute Python code it needs a **kernel** to use a Python environment
+:::
+
+::::
+
+::: {.column width="50%"}
+:::{.fragment}
+![](./images/kernels.png)
+:::
+:::
+
+::::

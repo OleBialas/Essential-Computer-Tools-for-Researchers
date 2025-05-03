@@ -1,6 +1,6 @@
 ---
 title: "Managing Python Environments with Conda"
-subtitle: "iBOTS Workshop"
+subtitle: "Essential Computer Tools for Researchers"
 format: revealjs
 theme: dracula
 date: May 5, 2025
