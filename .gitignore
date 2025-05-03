@@ -3,3 +3,5 @@
 *.pdf
 /.quarto/
 steinmetz_lfp.npz
+*/*/presentation_files/
+.quarto

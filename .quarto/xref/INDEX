@@ -19,5 +19,8 @@
   },
   "04_sharing_and_collaboratig_with_github/sciebo_demo.qmd": {
     "sciebo_demo.ipynb": "45d17d68"
+  },
+  "01_managing_environments_with_conda/presentation.qmd": {
+    "presentation.html": "6fabbfe8"
   }
 }

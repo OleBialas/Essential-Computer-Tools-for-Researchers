@@ -1,0 +1,85 @@
+---
+title: "Managing Python Environments with Conda"
+subtitle: "iBOTS Workshop"
+format: revealjs
+theme: dracula
+date: May 5, 2025
+---
+
+# Software Dependencies
+
+:::: {.columns}
+
+::: {.column width="50%"}
+:::{.fragment}
+- Software has **dependencies** which have dependencies themsevels
+:::
+:::{.fragment}
+- Two pieces of sofware needing different versions of the same dependency results in a **conflict**
+:::
+:::
+
+::: {.column width=50%}
+:::{.fragment}
+![](./images/dependencies.png){}
+:::
+:::
+
+::::
+
+# Evironment Management
+
+:::: {.columns}
+
+::: {.column width="60%"}
+:::{.fragment fragment-index=1}
+- Virtual environments are **self-contained** and avoid dependency confilcts.
+:::
+:::{.fragment fragment-index=2}
+- Project-specific environments improves **computational reproducibility**
+:::
+
+:::
+
+::: {.column width="40%"}
+
+:::{.fragment fragment-index=1}
+![](./images/environments.png){}
+:::
+
+:::
+
+::::
+
+# What is Conda?
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+::: {.fragment fragment-index=1}
+- **Conda** is an open-source environment and package manager
+:::
+
+::: {.fragment fragment-index=2}
+- **Anacoda** is a commercial, distribution of conda with prorietary repositories 
+:::
+
+::: {.fragment fragment-index=3}
+- **Conda-forge** is a community-driven, open-source alternative
+:::
+
+:::
+
+::: {.column width="40%"}
+
+::: {.fragment fragment-index=2}
+![](./images/anaconda.png){.absolute top=6cm}
+:::
+
+::: {.fragment fragment-index=3}
+![](./images/condaforge.png){.absolute top=12cm left=19cm }
+:::
+:::
+
+::::
