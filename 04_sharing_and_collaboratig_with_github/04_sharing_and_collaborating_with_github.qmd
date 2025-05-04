@@ -32,7 +32,7 @@ Open a local git repository (you can use the one from the previous notebook) in 
 :::
 
 :::{#exr-}
-Go to your GitHub page and xreate a new **public** repository on GitHub. IMPORTANT: initialize it **without** a REAME file - it should be **completely empty**. After you create the repository, copy the URL.
+Go to your GitHub page and create a new **public** repository on GitHub. IMPORTANT: initialize it **without** a README file - it should be **completely empty**. After you create the repository, copy the URL.
 :::
 
 :::{#exr-}
@@ -48,7 +48,7 @@ Go to GitHub to verify that your repository now contains the pushed content.
 :::
 
 :::{#exr-}
-Add a new text file with some content and commit the changes in local repository.  
+Add a new text file with some content and commit the changes to the local repository.  
 :::
 
 :::{#exr-}
@@ -60,7 +60,7 @@ Check GitHub to verify that your repository now contains the new file.
 :::
 
 :::{#exr-}
-Add new lines to the text file and commit the changes in local repository.
+Add new lines to the text file and commit the changes in to the local repository.
 :::
 
 :::{#exr-}
@@ -87,7 +87,7 @@ Open a folder that is **not a Git repository** in a new VSCode window.
 :::
 
 :::{#exr-}
-opy the URL of the repository containing the materials for this workshop: https://github.com/ibehave-ibots/iBOTS-Essential-Computer-Tools-for-Researchers-Workshop
+copy the URL of the repository containing the materials for this workshop: https://github.com/ibehave-ibots/iBOTS-Essential-Computer-Tools-for-Researchers-Workshop
 :::
 
 :::{#exr-}
@@ -134,7 +134,7 @@ Forking allows you to create a personal copy of someone else's repository. This 
 |---|---|---|
 | **(GitHub UI)** | Fork a repository on GitHub | Click **Fork** on the GitHub repository page |
 | `git clone <your-fork-url>` | Clone your forked repository locally | Click **Source Control (Ctrl + Shift + G)** → Click **Clone Repository** |
-| `git remote add upstream <original-repo-url>` | Link the original repository as an upstream remote | NA |
+| `git remote add upstream <original-repo-url>` | Link the original repository as an upstream remote | N/A |
 | `git push origin main` | Push the merged changes to your forked repository on GitHub | Click **Source Control** → Click **...** → Click **Push** |
 
 ---
@@ -148,11 +148,11 @@ In a new VSCode window, clone your forked repository using `git clone <your-fork
 :::
 
 :::{#exr-}
-Make a change to the README (or any other file) and commit them.  
+Make a change to the README (or any other file) and commit the change.  
 :::
 
 :::{#exr-}
-Push the changes to your forked repository using `git push origin main` and verify that your repository contains the changes
+Push the changes to your forked repository using `git push origin main` and verify on GitHub that your forked repository contains the changes
 :::
 
 ## Collaborating on GitHub
@@ -162,7 +162,7 @@ Create a new **public GitHub repository** with a README file containing your nam
 :::
 
 :::{#exr-}
-Fork the repository frm **another** member of your group.
+Fork the repository from **another** member of your group.
 :::
 
 :::{#exr-}
@@ -178,9 +178,9 @@ Push the changes to the forked repository.
 :::
 
 :::{#exr-}
-Creates a **Pull Request (PR)** to the original repository from your fork.  
+Create a **Pull Request (PR)** to the original repository from your fork.  
 :::
 
 :::{#exr-}
-If you received a PR, review it and merge it into your repository
+If you received a PR on you repository, review it and merge it.
 :::
