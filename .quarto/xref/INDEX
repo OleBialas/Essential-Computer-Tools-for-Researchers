@@ -25,5 +25,8 @@
   },
   "02_interactive_coding_with_jupyter_notebooks/presentation.qmd": {
     "presentation.html": "63bd7896"
+  },
+  "03_version_control_with_git/presentation.qmd": {
+    "presentation.html": "77d733fa"
   }
 }

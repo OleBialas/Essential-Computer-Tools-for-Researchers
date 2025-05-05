@@ -1,0 +1,72 @@
+---
+title: "Version Control with Git"
+subtitle: "Essential Computer Tools for Researchers"
+format: revealjs
+theme: dracula
+date: May 5, 2025
+---
+
+# Why Version Control?
+
+:::: {.colums}
+::: {.column width=50%}
+:::{.fragment}
+- Allows **backups** and **experimentation** without having to create copies
+:::
+:::{.fragment}
+- Improves **reproducibility** by making the code state explicit
+:::
+:::{.fragment}
+- Enables **collaboration** by tracking changes across contributors
+:::
+:::
+
+::: {.column width=50%}
+:::{.fragment}
+![](./images/final.gif){width="70%"}
+:::
+:::
+::::
+
+# Introducing Git
+
+:::{.fragment}
+- Git takes **snapshots** of the entire project folder
+:::
+
+:::{.fragment}
+- These snapshots are **comitted** to the project's history
+:::
+
+:::{.fragment}
+- All the history is stored in a hidden **.git** folder within your project
+:::
+
+:::{.fragment}
+![](./images/git_staging.jpg){.absolute left=220 width="60%"}
+:::
+
+# CLI vs GUI
+
+:::: {.colums}
+::: {.column width=70%}
+
+:::{.fragment fragment-index=1}
+- In the terminal, use the **command line interface** by typing *git*
+:::
+
+:::{.fragment fragment-index=3}
+- In VSCode, use the **graphical user interface** by pressing *Ctrl+Shift+G* 
+:::
+
+:::{.fragment fragment-index=2}
+![](./images/git_cli.png)
+:::
+:::
+
+::: {.column width=30%}
+:::{.fragment fragment-index=4}
+![](./images/git_gui.png)
+:::
+:::
+::::
